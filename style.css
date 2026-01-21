@@ -1,0 +1,72 @@
+/* Bütün ekranı mərkəzləyən hissə */
+body {
+    background-color: #FFFDE7; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Kartın özü */
+.contact-card {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(255, 204, 0, 0.2); /* Sarımtıl kölgə */
+    width: 350px; /* Sabit en veririk ki, dizayn dağılmasın */
+    text-align: center; /* İçindəki yazıları mərkəzləyir */
+    border: 1px solid #FFF59D;
+}
+
+/* Yazıların rəngi */
+h2 {
+    color: #fbc02d; /* Tünd sarı/qızılı tonu */
+    margin-bottom: 10px;     
+}
+
+p {
+    color: #616161;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* İnputlar (Daxiletmə sahələri) */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-sizing: border-box; /* Bu çox vacibdir, ölçünün kənara çıxmasını önləyir */
+    outline: none;
+    transition: 0.3s;
+}
+
+/* İnputa klikləyəndə sarı fokus effekti */
+input:focus, textarea:focus {
+    border-color: #ffeb3b;
+    box-shadow: 0 0 8px rgba(255, 235, 59, 0.5);
+}
+
+/* Sarı Düymə */
+button {
+    background-color: #ffca28; 
+    color: #333;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffb300;
+    transform: scale(1.02); /* Üzərinə gələndə azca böyüsün */
+}
